@@ -95,7 +95,7 @@ Y lo siguiente:
     "" if not ALLOW_EXCL else "\nTodos los comandos se pueden utilizar con/ o !.\n",
 )
 
-HUNTERALPHA_IMG = "https://i.imgur.com/N2Ru7ib.jpg"
+HUNTERALPHA_IMG = "https://telegra.ph/file/7e2f7a8b2d52c61bf5ced.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -176,7 +176,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Atras", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="🔙 Atras", callback_data="help_back")]]
                     ),
                 )
             elif args[0].lower() == "markdownhelp":
@@ -215,22 +215,22 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="👀𝔸𝕟𝕕𝕣𝕠𝕚𝕕ℂ𝕒𝕧𝕖🏴‍☠️",
-                                url="https://t.me/AndroidCave",
+                                text="👀🎄⛄𝘼𝙋𝙆 𝘼𝙉𝘿𝙍𝙊𝙄𝘿⛄🎄",
+                                url="https://t.me/APKandroid_grupo",
                             ),
                             InlineKeyboardButton(
                                 text="📂Canal LOGGER📂",
-                                url="https://t.me/joinchat/g2un-9HwasJmNjMx",
+                                url="https://t.me/loghelpbot",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="HunterAlpha Support🙈",
-                                url="https://t.me/AlphaEliasxd",
+                                text="Help Bot Support🙈",
+                                url="https://t.me/HelpBot_J01",
                             ),
                             InlineKeyboardButton(
                                 text="👑Mi dueño👑",
-                                url="https://t.me/AlphaElias",
+                                url="https://t.me/Josyam01",
                              ),
                         ],
                         [
@@ -294,7 +294,7 @@ def help_button(update: Update, context: CallbackContext):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Aquí está la ayuda para el *{}* modulo:\n".format(
+                "Aquí está la ayuda para el modulo *{}* :\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -304,7 +304,7 @@ def help_button(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Atras", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="🔙 Atras", callback_data="help_back")]]
                 ),
             )
 
@@ -387,7 +387,7 @@ def get_help(update: Update, context: CallbackContext):
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
         text = (
-            "Aquí está la ayuda disponible para *{}* modulo:\n".format(
+            "Aquí está la ayuda disponible para el modulo *{}* :\n".format(
                 HELPABLE[module].__mod_name__
             )
             + HELPABLE[module].__help__
@@ -396,7 +396,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Atras", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="🔙 Atras", callback_data="help_back")]]
             ),
         )
 
@@ -458,7 +458,7 @@ def settings_button(update: Update, context: CallbackContext):
             chat_id = mod_match.group(1)
             module = mod_match.group(2)
             chat = bot.get_chat(chat_id)
-            text = "*{}* tiene la siguiente configuración para el *{}* modulo:\n\n".format(
+            text = "*{}* tiene la siguiente configuración para el modulo *{}* :\n\n".format(
                 escape_markdown(chat.title), CHAT_SETTINGS[module].__mod_name__
             ) + CHAT_SETTINGS[module].__chat_settings__(chat_id, user.id)
             query.message.reply_text(
@@ -468,7 +468,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Atras",
+                                text="🔙 Atras",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -543,7 +543,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Configuraciones",
+                                text="⚙️ Configuraciones",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
