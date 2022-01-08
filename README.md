@@ -1,12 +1,12 @@
-![HUNTER](https://i.imgur.com/N2Ru7ib.jpg)
+![HUNTER](https://telegra.ph/file/7e2f7a8b2d52c61bf5ced.jpg)
 
-# Hunter Alpha
+# Help Bot
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Naruto suitable for Anime and Manga group chats. 
 
-Can be found on telegram as [Hunter Alpha (bot)](http://t.me/xxXhunteralphaX_Bot).
+Can be found on telegram as [Help Bot (bot))](http://t.me/Ghostyxbot).
 
-The Support group can be reached out to at [Hunter Alpha Support](https://t.me/AlphaEliasxd), where you can ask for help about [Hunter Alpha (bot)](https://t.me/xxXhunteralphaX_Bot), discover/request new features, report bugs, and stay in the loop whenever a new update is available :) 
+The Support group can be reached out to at [Hunter Alpha Support](https://t.me/AlphaEliasxd), where you can ask for help about [Help Bot (bot)](https://t.me/Ghostyxbot), discover/request new features, report bugs, and stay in the loop whenever a new update is available :) 
 
 
 ## How to setup/deploy.
@@ -28,7 +28,7 @@ REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
 
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AlphaEliasPY/AlphaHunterDev)
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/josyam01/AlphaHunterDev)
 
 </details>  
 
