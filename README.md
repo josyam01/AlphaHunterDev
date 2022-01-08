@@ -4,7 +4,7 @@
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Naruto suitable for Anime and Manga group chats. 
 
-Can be found on telegram as [Help Bot (bot))](http://t.me/Ghostyxbot).
+Can be found on telegram as [Help Bot (bot)](http://t.me/Ghostyxbot).
 
 The Support group can be reached out to at [Hunter Alpha Support](https://t.me/AlphaEliasxd), where you can ask for help about [Help Bot (bot)](https://t.me/Ghostyxbot), discover/request new features, report bugs, and stay in the loop whenever a new update is available :) 
 
